@@ -22,7 +22,7 @@
     <version>0.9.23</version>
   </parent>
   <artifactId>cards-project-dependencies-resources</artifactId>
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
   <name>CARDS - Project Dependencies Resources</name>
   <packaging>jar</packaging>
   <description>Resources needed for building the list of feature dependencies for CARDS-based projects</description>
@@ -31,7 +31,7 @@
     <connection>scm:git:git://github.com/data-team-uhn/cards-project-dependencies-resources.git</connection>
     <developerConnection>scm:git:git@github.com:data-team-uhn/cards-project-dependencies-resources.git</developerConnection>
     <url>https://github.com/data-team-uhn/cards-project-dependencies-resources/tree/main/</url>
-    <tag>HEAD</tag>
+    <tag>cards-project-dependencies-resources-1</tag>
   </scm>
 
   <build>
