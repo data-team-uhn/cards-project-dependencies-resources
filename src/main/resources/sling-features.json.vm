@@ -12,7 +12,7 @@
 ##   See the License for the specific language governing permissions and
 ##   limitations under the License.
 {
-  "${project.artifactId}": [
+  "${project.properties.get('cards.project')}": [
 #set ($first = true)
 #foreach ($p in $project.dependencies)
 #if ($p.type == 'slingosgifeature')
