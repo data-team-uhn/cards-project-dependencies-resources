@@ -19,9 +19,11 @@
 #if (!$first),
 #end
 #set ($first = false)
-    "mvn:${p.groupId}/${p.artifactId}/${p.version}/${p.type}#if ($!p.classifier)/${p.classifier}#end"##
+    "mvn:${p.groupId}/${p.artifactId}/#if ($p.version == ${project.properties.get('cards.version')}){$CARDS_VERSION}#else${p.version}#end/${p.type}#if ($!p.classifier)/${p.classifier}#end"##
 #end
 #end
-
+#if (!$first),
+#end
+    "mvn:io.uhndata.cards/cards-dataentry/{$CARDS_VERSION}/slingosgifeature/permissions_{$PERMISSIONS|${project.properties.get('cards.defaultPermissionScheme')}}"
   ]
 }
